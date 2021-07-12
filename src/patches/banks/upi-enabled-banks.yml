@@ -1,26 +1,30 @@
 ---
-# https://github.com/razorpay/ifsc/issues/126
-# Source: https://www.npci.org.in/upi-live-members
-# Last Updated: Jan 2020 (Count = 143)
+# Source: https://www.npci.org.in/what-we-do/upi/live-members
+# Remember to take a snapshot at https://web.archive.org/
+# when you make changes to this file
+# Last Updated: May 2021 (Count = 221)
 action: patch
 patch:
   :upi: true
 banks:
   - ABHY
   - ACBX
+  - ACUX
   - ADBX
+  - ADCC
   - AGVX
   - AIRP
-  - ALLA
   - AMCB
-  - ANDB
+  - AMDN
   - APBL
   - APGB
   - APGV
   - APMC
   - ASBL
+  - ASOX
   - AUBL
   - BACB
+  - BARA
   - BARB
   - BCBM
   - BDBL
@@ -28,7 +32,11 @@ banks:
   - BGGX
   - BHUX
   - BKDN
+  - BKDX
   - BKID
+  - BMPX
+  - BNSB
+  - BOFA
   - BRDX
   - BRGX
   - BUGX
@@ -36,15 +44,20 @@ banks:
   - CGGX
   - CITI
   - CIUB
+  - CLBL
   - CNRB
   - COLX
-  - CORP
   - COSB
   - CRSX
+  - CRSX
+  - CRUB
   - CSBK
+  - CSBX
+  - CTBX
+  - CZCX
   - DBSS
   - DCBL
-  - DEGX
+  - DCUX
   - DEUT
   - DGBX
   - DLXB
@@ -52,13 +65,18 @@ banks:
   - ESFB
   - ESMF
   - FDRL
+  - FGCB
   - FINO
   - FSFB
+  - GCUX
+  - GDCB
+  - GDUX
   - GSCB
   - HCBX
   - HDFC
   - HGBX
   - HMBX
+  - HPSC
   - HSBC
   - HUTX
   - IBKL
@@ -68,43 +86,71 @@ banks:
   - INDB
   - IOBA
   - IPPB
+  - IPSX
+  - ITBL
   - JAKA
+  - JANA
   - JIOP
   - JJSB
+  - JMCX
+  - JPCB
+  - JSBL
   - JSBP
   - JSFB
+  - JVCX
   - KAIJ
   - KARB
+  - KARX
+  - KBCX
+  - KBSX
   - KCCB
   - KDIX
   - KGSX
   - KJSB
   - KKBK
   - KLGB
+  - KMCB
+  - KMSX
+  - KPCX
   - KVBL
   - KVGB
+  - LATX
   - LAVB
+  - LONX
   - MAHB
   - MAHG
+  - MALX
+  - MAVX
   - MCBL
+  - MDBK
+  - MDMX
   - MERX
+  - MPRX
   - MRBX
   - MRTX
   - MSBL
   - MSCI
   - MSNU
+  - MSSX
   - MUBL
   - MUSX
+  - MVIX
   - MZRX
+  - NBMX
+  - NESF
   - NKGS
+  - NNSB
   - NSPB
   - NTBL
-  - ORBC
+  - NUBX
+  - PALX
   - PASX
+  - PCTX
+  - PCUX
+  - PDSX
   - PGBX
   - PJSB
-  - PKGB
-  - PMCB
+  - PMEC
   - PRTH
   - PSIB
   - PTSX
@@ -112,45 +158,81 @@ banks:
   - PUNB
   - PURX
   - PYTM
+  - RACX
   - RATN
+  - RGSX
+  - RJTX
   - RMGB
   - RNSB
+  - RSBL
+  - SACB
+  - SADX
   - SAGX
+  - SAHX
+  - SANX
+  - SAVX
+  - SBCR
   - SBIN
+  - SBLS
   - SCBL
   - SCOB
+  - SDCB
+  - SDCE
+  - SDCX
+  - SEWX
+  - SHIX
   - SIBL
   - SIDC
+  - SNSX
   - SPCB
+  - SPSX
   - SRCB
+  - SRHX
   - SSDX
+  - STCB
+  - STRX
   - SUBX
+  - SUNB
   - SURY
+  - SUSX
   - SUTB
   - SUVX
+  - SVAX
   - SVCB
   - SVCX
+  - SXXX
   - SYNB
+  - TAMX
   - TBSB
+  - TCBX
+  - TECX
   - TGBX
   - TJSB
   - TMBL
+  - TMSX
   - TSAB
   - TUDX
   - TUMX
-  - UBIN
   - UCBA
   - UMSX
   - USFB
   - UTBI
   - UTGX
   - UTIB
+  - UTKS
+  - UUCX
+  - VANX
   - VARA
+  - VCCX
   - VGBX
-  - VIJB
   - VIJX
+  - VIKX
+  - VISX
   - VSBL
   - VSCX
+  - VVCX
   - VVSB
   - XJKG
   - YESB
+  - YLNX
+  - ZRNB

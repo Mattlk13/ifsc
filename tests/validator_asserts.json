@@ -1,5 +1,6 @@
 {
 	"testBasicValidator": {
+		"PUNB0000000": false,
 		"DLXB0000097": true,
 		"HDFC0002854": true,
 		"ICIC0007429": true,
@@ -11,7 +12,9 @@
 		"KKBK0000261": true,
 		"UTIB0001688": true,
 		"BARB0DBAGIY": true,
-		"BARB0DBAAHM": true
+		"BARB0DBAAHM": true,
+		"ICLL0000001": true,
+		"CNRB0011023": true
 	},
 	"testValidateStringLookup": {
 		"BOTM0NEEMRA": true,

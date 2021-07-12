@@ -44,6 +44,7 @@ class Bank
     const AJSX = 'AJSX';
     const AJUX = 'AJUX';
     const AKJB = 'AKJB';
+    const AKKB = 'AKKB';
     const AKMX = 'AKMX';
     const AKOX = 'AKOX';
     const ALAX = 'ALAX';
@@ -79,6 +80,7 @@ class Bank
     const APNX = 'APNX';
     const APRX = 'APRX';
     const APSX = 'APSX';
+    const ARBL = 'ARBL';
     const ARCX = 'ARCX';
     const ARMX = 'ARMX';
     const ARYX = 'ARYX';
@@ -244,6 +246,7 @@ class Bank
     const CMPX = 'CMPX';
     const CNRB = 'CNRB';
     const CNSX = 'CNSX';
+    const COAS = 'COAS';
     const COCX = 'COCX';
     const COLX = 'COLX';
     const COMX = 'COMX';
@@ -428,6 +431,7 @@ class Bank
     const HSSX = 'HSSX';
     const HUBX = 'HUBX';
     const HUCB = 'HUCB';
+    const HUCH = 'HUCH';
     const HUCX = 'HUCX';
     const HUTX = 'HUTX';
     const HVBK = 'HVBK';
@@ -438,6 +442,7 @@ class Bank
     const ICBL = 'ICBL';
     const ICHX = 'ICHX';
     const ICIC = 'ICIC';
+    const ICLL = 'ICLL';
     const ICMX = 'ICMX';
     const IDFB = 'IDFB';
     const IDIB = 'IDIB';
@@ -557,6 +562,7 @@ class Bank
     const JSVX = 'JSVX';
     const JSWX = 'JSWX';
     const JTIX = 'JTIX';
+    const JTSC = 'JTSC';
     const JTSX = 'JTSX';
     const JUCX = 'JUCX';
     const JUSX = 'JUSX';
@@ -577,6 +583,7 @@ class Bank
     const KATX = 'KATX';
     const KAYX = 'KAYX';
     const KBCX = 'KBCX';
+    const KBKB = 'KBKB';
     const KBNX = 'KBNX';
     const KBSX = 'KBSX';
     const KCBL = 'KCBL';
@@ -714,6 +721,7 @@ class Bank
     const MCOX = 'MCOX';
     const MCSX = 'MCSX';
     const MCUX = 'MCUX';
+    const MDBK = 'MDBK';
     const MDCB = 'MDCB';
     const MDCX = 'MDCX';
     const MDEX = 'MDEX';
@@ -773,6 +781,7 @@ class Bank
     const MSSX = 'MSSX';
     const MUBL = 'MUBL';
     const MUBX = 'MUBX';
+    const MUCG = 'MUCG';
     const MUCX = 'MUCX';
     const MUDX = 'MUDX';
     const MUNX = 'MUNX';
@@ -966,6 +975,7 @@ class Bank
     const RBCX = 'RBCX';
     const RBIH = 'RBIH';
     const RBIN = 'RBIN';
+    const RBIP = 'RBIP';
     const RBIS = 'RBIS';
     const RCBX = 'RCBX';
     const RCCX = 'RCCX';
@@ -1000,6 +1010,7 @@ class Bank
     const RSBL = 'RSBL';
     const RSBX = 'RSBX';
     const RSCB = 'RSCB';
+    const RSSB = 'RSSB';
     const RSSX = 'RSSX';
     const RSUX = 'RSUX';
     const RSVX = 'RSVX';
@@ -1029,6 +1040,7 @@ class Bank
     const SAVX = 'SAVX';
     const SAWX = 'SAWX';
     const SBBJ = 'SBBJ';
+    const SBCR = 'SBCR';
     const SBCX = 'SBCX';
     const SBHY = 'SBHY';
     const SBIN = 'SBIN';
@@ -1039,6 +1051,7 @@ class Bank
     const SBMX = 'SBMX';
     const SBMY = 'SBMY';
     const SBNX = 'SBNX';
+    const SBPS = 'SBPS';
     const SBPX = 'SBPX';
     const SBSX = 'SBSX';
     const SBTR = 'SBTR';
@@ -1061,8 +1074,10 @@ class Bank
     const SDCX = 'SDCX';
     const SDHX = 'SDHX';
     const SDSX = 'SDSX';
+    const SDTC = 'SDTC';
     const SDTX = 'SDTX';
     const SDUX = 'SDUX';
+    const SECB = 'SECB';
     const SEMX = 'SEMX';
     const SENX = 'SENX';
     const SEUX = 'SEUX';
@@ -1084,6 +1099,7 @@ class Bank
     const SHOX = 'SHOX';
     const SHRX = 'SHRX';
     const SHSX = 'SHSX';
+    const SHUB = 'SHUB';
     const SHUX = 'SHUX';
     const SIBL = 'SIBL';
     const SIBX = 'SIBX';
@@ -1172,6 +1188,7 @@ class Bank
     const SUNB = 'SUNB';
     const SURX = 'SURX';
     const SURY = 'SURY';
+    const SUSB = 'SUSB';
     const SUSX = 'SUSX';
     const SUTB = 'SUTB';
     const SUVX = 'SUVX';
@@ -1188,6 +1205,8 @@ class Bank
     const SVSX = 'SVSX';
     const SWMX = 'SWMX';
     const SWSX = 'SWSX';
+    // This is a temporary assignment
+    const SXXX = 'SXXX';
     const SYNB = 'SYNB';
     const TACX = 'TACX';
     const TADX = 'TADX';
@@ -1261,6 +1280,7 @@ class Bank
     const TMTX = 'TMTX';
     const TMUX = 'TMUX';
     const TNBX = 'TNBX';
+    const TNCB = 'TNCB';
     const TNCX = 'TNCX';
     const TNDC = 'TNDC';
     const TNEX = 'TNEX';
@@ -1273,6 +1293,7 @@ class Bank
     const TOCX = 'TOCX';
     const TPCX = 'TPCX';
     const TPDX = 'TPDX';
+    const TPSC = 'TPSC';
     const TPSX = 'TPSX';
     const TPUX = 'TPUX';
     const TRAX = 'TRAX';
@@ -1349,6 +1370,7 @@ class Bank
     const UTKS = 'UTKS';
     const UTKX = 'UTKX';
     const UTZX = 'UTZX';
+    const UUCB = 'UUCB';
     const UUCX = 'UUCX';
     const VADX = 'VADX';
     const VAIX = 'VAIX';

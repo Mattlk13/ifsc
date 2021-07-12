@@ -30,12 +30,28 @@ class DatasetTest extends TestCase
     ];
 
     public function testIFSCDotCsv() {
-        $file = __DIR__ . "../../scraper/scripts/data/IFSC.csv";
-        if(file_exists($file)) {
-            $line = fgets(fopen($file, 'r'));
+        $fileName = __DIR__ . "/../../scraper/scripts/data/IFSC.csv";
+        if(file_exists($fileName) or getenv('CI')) {
+            $file = fopen($fileName, 'r');
+            $line = fgets($file);
             $row = str_getcsv($line);
             foreach (self::KNOWN_FIELDS as $field) {
-                $this->assertContains($field, $row, "$row missing in IFSC.csv");
+                $this->assertContains($field, $row, "$field missing in IFSC.csv");
+            }
+
+            $expectedCount = count($row);
+
+            $bankNameIndex = array_search('BANK', $row);
+            $micrIndex = array_search('MICR', $row);
+
+            $lineno = 2;
+
+            while($line = fgets($file)) {
+                $row = str_getcsv($line);
+                $this->assertCount($expectedCount, $row, "IFSC.csv L$lineno missing fields: $line");
+                $this->assertNotEmpty($row[$bankNameIndex], "IFSC.csv L$lineno has empty bankname $line");
+                $this->assertNotEquals('NA', $row[$micrIndex], "IFSC.csv L$lineno has MICR set to NA $line");
+                $lineno++;
             }
         }
         else {
@@ -48,20 +64,15 @@ class DatasetTest extends TestCase
      * compression helps keep the download file size for releases low.
      */
     public function testBankFiles() {
-        $gzFile = __DIR__ . "/../../scraper/scripts/data/by-bank.tar.gz";
         $tarFile = __DIR__ . "/../../scraper/scripts/data/by-bank.tar";
 
         $dir = tempnam(sys_get_temp_dir(), '') . '.dir';
 
-        @unlink($tarFile);
         mkdir($dir);
-
-        $p = new PharData($gzFile);
-        $p->decompress();
 
         // unarchive from the tar
         $phar = new PharData($tarFile);
-        print_r($phar->extractTo($dir));
+        $phar->extractTo($dir);
 
         foreach(glob("$dir/by-bank/*.json") as $json) {
             $data = json_decode(file_get_contents($json), true);

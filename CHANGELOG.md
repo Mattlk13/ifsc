@@ -3,7 +3,89 @@
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## UNRELEASED
+## [UNRELEASED][unreleased]
+
+## [1.6.0][1.6.0]
+- Support PHP8
+- Fix for some invalid IFSCs being marked as valid. Ex: `PUNB0000000` (#229)
+- Update list of UPI enabled banks
+- Fix all exported datasets to include correct bank name.
+- Only use validated MICR codes
+
+## [1.5.13][1.5.13]
+- [upi] Vijaya Bank and Dena Gujarat Gramin Bank are no more
+- [upi] 7 new banks now support UPI
+- Metadata update for new release
+- Sanitizes most text fields to remove special characters that show up from encoding errors. Fixes #29, #32
+- Start parsing contact numbers from NEFT sheet as well. Published in E.164 wherever possible
+- Changes some empty fields to null instead of "NA"
+
+## [1.5.12][1.5.12]
+
+- Only metadata changes in this release.
+- Data corrections to account for broken alignment in RBI's RTGS spreadsheet
+- Improved support for Contact details that are sourced from RTGS dataset. CONTACT details are returned in E.164 format
+
+## [1.5.11][1.5.11]
+## Changed
+- Metadata updates
+
+## [1.5.10][1.5.10]
+## Changed
+- 2 new banks:
+  - ARBL: Arvind Sahakari Bank
+  - TNCB: Nawanagar Co-operative Bank
+- Name for STCB changed from "State Bank of Mauritius" to "SBM Bank"
+- Temporary code added for "Sri Rama Co-operative Bank": `SXXX`
+- Support for ICLL (Indian Clearing Corporation) added. `ICLL0000001` is the branch.
+
+## [1.5.9][1.5.9]
+### Added
+- Initial support for SWIFT mappings. Only SBI and PNB branches are currently supported, and accuracy is not guaranteed. Feedback is welcome.
+
+### Changed
+- Metadata changes
+
+## [1.5.8][1.5.8]
+### Changed
+- Only metadata changes in this release
+- New Banks:
+    - `AKKB`: Akkamahadevi Mahila Sahakari Bank Niyamit
+    - `MUCG`: Merchants Urban Coop Bank
+    - `SBCR`: Shree Basaveshwar Urban Coop Bank
+    - `SBPS`: Sri Basaveshwar Pattana Sahakari Bank
+
+## [1.5.7][1.5.7]
+### Changed
+- 1 new bank - TPSC ("Punjab State Cooperative Bank")
+- 15 new banks in UPI
+- Patches `PUNB0641100` to give correct response.
+- [php] Returns the BANKCODE from the API instead of using the first 4 characters.
+- The large number of additions to Union Bank/Punjab National bank is due to the upcoming mergers. The existing IFSC for the merged banks are not impacted.
+
+## [1.5.6][1.5.6]
+### Changed
+- Metadata updates
+
+## 1.5.5
+
+### Changed
+
+- Metadata updates
+- New Banks:
+	- HUCH : Hanamasagar Urban Co-operative Bank
+	- MDBK : Model Co-operative Bank
+	- SDTC : Shri D T Patil Co-operative Bank
+
+## 1.5.4
+
+### Changed
+
+- Metadata updates
+- Optimized memory consumption in php tests.
+- New Banks:
+	- KBKB : Kookmin Bank
+	- SUSB : Suco Souharda Sahakari Bank
 
 ## 1.5.3
 
@@ -122,7 +204,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 -   Removes some data formats (YAML/Large JSON) for cleaner code. If you were using them, please let create an issue.
 
-[unreleased]: https://github.com/razorpay/ifsc/compare/1.4.9...HEAD
+[unreleased]: https://github.com/razorpay/ifsc/compare/1.6.0...HEAD
+[1.6.0]: https://github.com/razorpay/ifsc/releases/tag/1.6.0
+[1.5.13]: https://github.com/razorpay/ifsc/releases/tag/1.5.13
+[1.5.12]: https://github.com/razorpay/ifsc/releases/tag/1.5.12
+[1.5.11]: https://github.com/razorpay/ifsc/releases/tag/1.5.11
+[1.5.10]: https://github.com/razorpay/ifsc/releases/tag/1.5.10
+[1.5.9]: https://github.com/razorpay/ifsc/releases/tag/1.5.9
+[1.5.8]: https://github.com/razorpay/ifsc/releases/tag/1.5.8
+[1.5.7]: https://github.com/razorpay/ifsc/releases/tag/1.5.7
+[1.5.6]: https://github.com/razorpay/ifsc/releases/tag/1.5.6
 [1.4.10]: https://github.com/razorpay/ifsc/releases/tag/1.4.10
 [1.4.9]: https://github.com/razorpay/ifsc/releases/tag/1.4.9
 [1.4.8]: https://github.com/razorpay/ifsc/releases/tag/1.4.8
